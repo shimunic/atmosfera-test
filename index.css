@@ -1,0 +1,149 @@
+@use "@material/button";
+
+@include button.core-styles;
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+html {
+  background-color: #f5f1e8;
+  transition: background-color 2s;
+  overflow:  hidden;
+}
+
+html.dark {
+  background-color: #2B234C;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* height: 630px; */
+  width: 336px;
+  margin: 20px;
+}
+
+/* .image {
+  margin-top: 21px;
+} */
+
+.main-button {
+  
+  height: 58px;
+  width: 100%;
+
+  display: flex;
+  text-align: center;
+
+  color: #FFFFFF;
+  margin-top: 10px;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn span {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background: #FFFFFF;
+    animation: buttonWave 1.6s;
+}
+
+@keyframes buttonWave {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(40);
+    }
+}
+
+.btn-default {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 17px;
+  width: 100%;
+  outline: none;
+  letter-spacing: 0.5px;
+  border: none;
+  padding: 20px 30px;
+  color: #fff;
+  background: #2B234C;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(43, 35, 76, 0.3);
+  border-radius: 8px;
+  transition: background-color 2s;
+}
+
+.btn-dark {
+  background-color: #D259F5;
+}
+
+/* .btn-default:hover {
+  background-color: #392f66;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+} */
+
+.heading {
+  display: flex;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #2B234C;
+  transition: color 2s;
+}
+
+.heading-dark {
+  color: #FFFFFF;
+}
+
+.cancel-link-block {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cancel {
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+
+  letter-spacing: -0.08px;
+
+  color: #2B234C;
+  transition: color 2s;
+}
+
+.cancel-dark {
+  color: #D259F5;
+}

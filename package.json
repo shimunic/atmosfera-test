@@ -16,7 +16,5 @@
     "url": "https://github.com/shimunic/atmosfera-test/issues"
   },
   "homepage": "https://github.com/shimunic/atmosfera-test#readme",
-  "dependencies": {
-    "@material/button": "^7.0.0"
-  }
+  "dependencies": {}
 }
